@@ -1,0 +1,16 @@
+<section class="upcoming-shows-location upcoming-shows-{{ include.location | downcast }}">
+    <h3>{{ include.location }}</h3>
+    <ul class="upcoming-show-list">
+        {% assign sortedShows = include.shows | sort: "datetime" %}
+        {% for show in sortedShows %}
+        <li class="upcoming-show">
+            <div class="show-title">{{ show.title }}</div>
+            <div class="show-location">{{ show.venue }}</div>
+            <div class="show-date">{{ show.datetime | date: "%A, %e %B %Y" }}</div>
+            <div class="show-time">{{ show.datetime | date: "%l:%M%P" }}</div>
+            <div class="show-price">{{ show.price }}</div>
+            <a class="button show-booking-button" href="{{ show.bookingLink }}">Book now</a>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
