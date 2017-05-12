@@ -13,7 +13,10 @@ Field name:
     title: Uncle Armando (featuring Rob Kemp)
     booking-link: http://www.upstairsatthewestern.com/shows/uncle-armando-may-2017/
   Northampton:
-  - Key: 
+  - title: Short Form
+    datetime: 2017-05-27 20:00:00 Z
+    price: "£7 (£5 advance)"
+    booking-link: https://www.eventbrite.co.uk/e/the-same-faces-improvised-comedy-northampton-tickets-31571746945?aff=erelpanelorg
 layout: home
 ---
 
