@@ -1,0 +1,11 @@
+title: The Same Faces
+description: > # this means to ignore newlines until "baseurl:"
+  The Same Faces are an improvised comedy group, based in Leicester and Northampton.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.thesamefaces.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock

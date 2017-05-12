@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+$white: #fff1f3;
+$black: #181112;
+$light-pink: #ffb6c1;
+$dark-pink: #a50018;
+$light-grey: #eae9e9;
+
+$logoWidth: 1800px;
+$logoHeight: 1850px;
+
+$border-subtle: 1px solid $light-grey;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  color: $black;
+  background: $white;
+}
+
+a {
+    color: $dark-pink;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+        color: $light-pink;
+        background: $black;
+    }
+}
+
+h1 a:hover {
+    background: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    padding: 0 12px;
+}
+
+header {
+}
+
+.content {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-logo {
+    width: $logoWidth / 20;
+    height: $logoHeight / 20;
+}
+
+h1 {
+    margin: 0;
+    padding: 6px 12px;
+}
+
+.main-nav-list-item, .social-nav-list-item {
+    text-transform: uppercase;
+    border-bottom: $border-subtle;
+
+    a {
+        display: block;
+        padding: 6px 12px;
+    }
+}
+
+.main-nav-list-item:first-child {
+    border-top: $border-subtle;
+}
+
+@media (min-width: 768px) {
+    header {
+        display: flex;
+    }
+
+    .main-nav {
+        flex: 1;
+    }
+
+    .main-nav-list, .social-nav-list {
+        display: flex;
+        line-height: $logoHeight / 20 + 12px;
+    }
+
+    .main-nav-list-item, .social-nav-list-item {
+        border: none;
+    }
+}
