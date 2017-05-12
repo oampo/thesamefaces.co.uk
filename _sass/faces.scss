@@ -11,17 +11,22 @@ $logoHeight: 1850px;
 
 $border-subtle: 1px solid $light-grey;
 
+$spacing-s: 6px;
+$spacing-m: 12px;
+$spacing-l: 24px;
+
 * {
     box-sizing: border-box;
 }
 
 body {
-  margin: 0 auto;
   font-family: 'Fira Sans', sans-serif;
   font-size: 18px;
   line-height: 1.4;
   color: $black;
   background: $white;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -41,13 +46,12 @@ h1 a:hover {
 
 img {
     max-width: 100%;
-}
-
-p {
-    padding: 0 12px;
+    display: block;
 }
 
 header {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .content {
@@ -55,7 +59,7 @@ header {
     margin: 0 auto;
 }
 
-nav ul {
+nav ul, .upcoming-show-list {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -68,7 +72,45 @@ nav ul {
 
 h1 {
     margin: 0;
-    padding: 6px 12px;
+    padding: $spacing-m $spacing-m;
+    display: flex;
+
+    a {
+        height: $logoHeight / 20;
+    }
+}
+
+h2, h3 {
+    margin: 0 0 $spacing-m 0;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    margin: 0 0 1em 0;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  vertical-align: middle;
+}
+
+button, a.button {
+    display: inline-block;
+    background: $black;
+    color: $light-pink;
+    padding: $spacing-m;
 }
 
 .main-nav-list-item, .social-nav-list-item {
@@ -77,12 +119,76 @@ h1 {
 
     a {
         display: block;
-        padding: 6px 12px;
+        padding: $spacing-s $spacing-m;
     }
 }
 
 .main-nav-list-item:first-child {
     border-top: $border-subtle;
+}
+
+.icon-facebook-square {
+    color: #3B5998;
+}
+
+.icon-twitter-square {
+    color: #00aced;
+}
+
+.icon-youtube-play {
+    color: #cd201f;
+}
+
+.icon-instagram {
+    background: #d93175;
+    color: white;
+    border-radius: 4px;
+}
+
+.upcoming-shows {
+    background: $light-pink;
+}
+
+.upcoming-shows-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: $spacing-l $spacing-m;
+}
+
+.upcoming-show {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.show-title {
+    font-weight: bold;
+}
+
+.show-location {
+    flex-basis: 100%;
+}
+
+.show-booking-button {
+    flex-basis: 100%;
+}
+
+.show-time {
+    margin-left: $spacing-s;
+    flex: 1;
+}
+
+.hero-image {
+    margin: 0 auto;
+}
+
+.home-page .content {
+    padding-top: $spacing-l;
+    font-size: 2em;
+    max-width: 1200px;
+}
+
+.blurb {
+    padding: 0 $spacing-m;
 }
 
 @media (min-width: 768px) {
@@ -96,10 +202,47 @@ h1 {
 
     .main-nav-list, .social-nav-list {
         display: flex;
-        line-height: $logoHeight / 20 + 12px;
+        line-height: $logoHeight / 20 + 2 * $spacing-m;
+
+        a {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
     }
 
     .main-nav-list-item, .social-nav-list-item {
         border: none;
+    }
+
+    .social-nav-text {
+        display: none;
+    }
+
+    .social-nav .icon {
+        width: 2em;
+        height: 2em;
+    }
+
+
+    .icon-instagram {
+        border-radius: 8px;
+    }
+
+    .upcoming-shows-locations {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .upcoming-shows-location {
+        flex: 1;
+        margin: 0 $spacing-m;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }

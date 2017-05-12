@@ -1,6 +1,10 @@
 <section class="upcoming-shows">
-    <h2>Upcoming shows</h2>
-    {% include show-list.html location="Leicester" shows=page.upcomingShows.leicester %}
-    {% include show-list.html location="Northampton" shows=page.upcomingShows.northampton %}
+    <div class="upcoming-shows-inner">
+        <h2>Upcoming shows</h2>
+        <div class="upcoming-shows-locations">
+            {% include show-list.html location="Leicester" shows=page.upcomingShows.leicester %}
+            {% include show-list.html location="Northampton" shows=page.upcomingShows.northampton %}
+        </div>
+    </div>
 </section>
 
