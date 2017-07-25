@@ -74,5 +74,10 @@
         <main class="main" aria-label="Content">
             {{ content }}
         </main>
-  </body>
+        {% if page.customJs %}
+        {% for file in page.customJs %}
+        <script src="{{file}}"></script>
+        {% endfor %}
+        {% endif %}
+    </body>
 </html>
