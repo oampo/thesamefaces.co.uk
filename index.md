@@ -15,7 +15,6 @@ upcomingShows:
     venue: Upstairs at the Western
     price: "£8"
     time: 7:00pm
-    title: Uncle Armando
     bookingLink: http://www.upstairsatthewestern.com/
   northampton:
   - title: Short form
@@ -27,10 +26,10 @@ upcomingShows:
     bookingLink: https://www.eventbrite.co.uk/e/the-same-faces-improvised-comedy-northampton-tickets-31571746945?aff=erelpanelorg
 layout: home
 customJs:
-  - /assets/jquery-3.2.1.slim.min.js
-  - /assets/rrule.js
-  - /assets/moment.min.js
-  - /assets/upcoming-shows.js
+- "/assets/jquery-3.2.1.slim.min.js"
+- "/assets/rrule.js"
+- "/assets/moment.min.js"
+- "/assets/upcoming-shows.js"
 ---
 
 We are **The Same Faces**, an improvised comedy group based in **Leicester** and **Northampton**.  We regularly [stand on stage and make people laugh](/shows), and are constantly [training people to be funny, confident, and great communicators](/workshops). We even offer training for those of you who [have to wear a suit once in a while](/corporate).

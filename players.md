@@ -2,19 +2,19 @@
 title: The Players
 layout: page
 regulars:
-    - name: Tom Young
-    - name: Allan Smith
-    - name: Dave Gotheridge
-    - name: Jen Kenny
+- name: Tom Young
+- name: Allan Smith
+- name: Dave Gotheridge
+- name: Jen Kenny
 occasionals:
-    - name: Kierann Shah
-    - name: Kieran Atwood
-    - name: Russ Payne
-    - name: Mark Vigil
-    - name: David Buton
-    - name: Joe Turner
+- name: Kierann Shah
+- name: Kieran Atwood
+- name: Russ Payne
+- name: Mark Vigil
+- name: David Buton
+- name: Joe Turner
 alumni:
-    - name: Mike Brown
+- name: Mike Brown
 ---
 
 ### Regulars
