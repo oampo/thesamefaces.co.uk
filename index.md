@@ -16,7 +16,7 @@ upcomingShows:
     price: "£8"
     time: 7:00pm
     title: Uncle Armando
-    bookingLink: http://www.upstairsatthewestern.com/shows/uncle-armando/
+    bookingLink: http://www.upstairsatthewestern.com/
   northampton:
   - title: Short form
     day: Saturday
