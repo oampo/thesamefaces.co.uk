@@ -5,6 +5,7 @@ upcomingShows:
   - title: Short form
     day: Saturday
     week: 1
+    time: 8:00pm
     venue: The Criterion
     price: "£7 (£5 advance)"
     bookingLink: https://www.eventbrite.co.uk/e/the-same-faces-improvised-comedy-leicester-tickets-30686019711?aff=erelexpmlt
@@ -13,12 +14,14 @@ upcomingShows:
     week: 3
     venue: Upstairs at the Western
     price: "£8"
+    time: 7:00pm
     title: Uncle Armando
     bookingLink: http://www.upstairsatthewestern.com/shows/uncle-armando/
   northampton:
   - title: Short form
     day: Saturday
     week: -1
+    time: 8:00pm
     venue: The Black Prince
     price: "£7 (£5 advance)"
     bookingLink: https://www.eventbrite.co.uk/e/the-same-faces-improvised-comedy-northampton-tickets-31571746945?aff=erelpanelorg
