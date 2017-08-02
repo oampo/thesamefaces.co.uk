@@ -9,18 +9,22 @@ $light-grey: #eae9e9;
 $logoWidth: 1800px;
 $logoHeight: 1850px;
 
+$max-width: 1200px;
+
 $border-subtle: 1px solid $light-grey;
 
 $spacing-s: 6px;
 $spacing-m: 12px;
 $spacing-l: 24px;
 
+$font-stack: 'Fira Sans', sans-serif;
+
 * {
     box-sizing: border-box;
 }
 
 body {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: $font-stack;
   font-size: 20px;
   line-height: 1.4;
   color: $black;
@@ -55,7 +59,7 @@ img {
 }
 
 header {
-    max-width: 1200px;
+    max-width: $max-width;
     margin: 0 auto;
 }
 
@@ -155,7 +159,7 @@ button, a.button {
 }
 
 .upcoming-shows-inner {
-    max-width: 1200px;
+    max-width: $max-width;
     margin: 0 auto;
     padding: $spacing-l $spacing-m;
 }
@@ -189,7 +193,7 @@ button, a.button {
 .home-page .content {
     padding-top: $spacing-l;
     font-size: 1.8em;
-    max-width: 1200px;
+    max-width: $max-width;
 }
 
 .blurb {
@@ -265,3 +269,19 @@ button, a.button {
         }
     }
 }
+
+/* Shop integration */
+.SprdMain {
+    max-width: $max-width;
+    font-family: $font-stack;
+}
+
+.sprd-header {
+    display: none;
+}
+
+.customHeader, .customPageBackground, .customFooter, .sprd-bg-s1, .sprd-bg-m1 {
+    background-color: $white !important;
+}
+
+    
