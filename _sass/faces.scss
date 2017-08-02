@@ -38,6 +38,11 @@ a {
         color: $light-pink;
         background: $black;
     }
+
+    &.active {
+        color: $black;
+        background: $light-pink;
+    }
 }
 
 h1 a:hover {

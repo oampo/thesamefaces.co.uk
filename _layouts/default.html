@@ -21,16 +21,16 @@
             <nav class="main-nav">
                 <ul class="main-nav-list">
                     <li class="main-nav-list-item">
-                        <a href="/shows">Shows</a>
+                        <a href="/shows" {% if page.url == '/shows.html' %}class="active"{% endif %}>Shows</a>
                     </li>
                     <li class="main-nav-list-item">
-                        <a href="/players">Players</a>
+                        <a href="/players" {% if page.url == '/players.html' %}class="active"{% endif %}>Players</a>
                     </li>
                     <li class="main-nav-list-item">
-                        <a href="/workshops">Workshops</a>
+                        <a href="/workshops" {% if page.url == '/workshops.html' %}class="active"{% endif %}>Workshops</a>
                     </li>
                     <li class="main-nav-list-item">
-                        <a href="/corporate">Corporate</a>
+                        <a href="/corporate" {% if page.url == '/corporate.html' %}class="active"{% endif %}>Corporate</a>
                     </li>
                 </ul>
             </nav>
