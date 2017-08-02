@@ -21,7 +21,7 @@ $spacing-l: 24px;
 
 body {
   font-family: 'Fira Sans', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.4;
   color: $black;
   background: $white;
@@ -85,11 +85,11 @@ h2, h3 {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 24px;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 p {
@@ -183,7 +183,7 @@ button, a.button {
 
 .home-page .content {
     padding-top: $spacing-l;
-    font-size: 2em;
+    font-size: 1.8em;
     max-width: 1200px;
 }
 
@@ -233,8 +233,8 @@ button, a.button {
     }
 
     .social-nav .icon {
-        width: 2em;
-        height: 2em;
+        width: 1.8em;
+        height: 1.8em;
     }
 
 
