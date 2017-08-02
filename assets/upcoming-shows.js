@@ -4,7 +4,9 @@ function mod(n, m) {
 
 $('.show-date').toArray().forEach(function($date) {
     $date = $($date);
+    var date;
     if ($date.data('data')) {
+        date = moment($date.data('data'));
         // TODO
     } else {
         var day = $date.data('day');
@@ -15,11 +17,18 @@ $('.show-date').toArray().forEach(function($date) {
             bysetpos: week,
             byweekday: dayInt
         });
-        var date = moment(rule.after(new Date()));
-        console.log(date.format('YYYY-MM-DD'));
+        var now = moment();
+        var start = moment($date.data('start'));
+        if (now.isAfter(start)) {
+            start = now;
+        }
+
+        date = moment(rule.after(start.toDate()));
         $date.attr('data-date', date.format('YYYY-MM-DD'));
         $date.text(date.format('dddd, D MMMM YYYY'));
     }
+    $date.attr('data-date', date.format('YYYY-MM-DD'));
+    $date.text(date.format('dddd, D MMMM YYYY'));
 });
 
 $('.upcoming-show-list').toArray().forEach(function($location) {

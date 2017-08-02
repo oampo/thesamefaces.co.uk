@@ -12,11 +12,16 @@ upcomingShows:
   - title: Uncle Armando
     day: Monday
     week: 3
+    start: 2017-09
     venue: Upstairs at the Western
     price: "£8"
     time: 7:00pm
-    title: Uncle Armando
     bookingLink: http://www.upstairsatthewestern.com/
+    guests:
+        2017-09: Naz Osmanoglu
+        2017-10: Mrs Barbara Nice
+        2017-11: Jim Smallman
+        2017-12: Stella Graham
   northampton:
   - title: Short form
     day: Saturday
@@ -25,6 +30,11 @@ upcomingShows:
     venue: The Black Prince
     price: "£7 (£5 advance)"
     bookingLink: https://www.eventbrite.co.uk/e/the-same-faces-improvised-comedy-northampton-tickets-31571746945?aff=erelpanelorg
+  elsewhere:
+  - title: Birmingham Improv Festival
+    date: 2017-10-29
+    venue: The Blue Orange Theatre, Birmingham
+    bookingLink: http://birminghamimprovfestival.com/
 layout: home
 customJs:
   - /assets/jquery-3.2.1.slim.min.js
