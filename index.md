@@ -18,10 +18,10 @@ upcomingShows:
     time: 7:00pm
     bookingLink: http://www.upstairsatthewestern.com/
     guests:
-        2017-09: Naz Osmanoglu
-        2017-10: Mrs Barbara Nice
-        2017-11: Jim Smallman
-        2017-12: Stella Graham
+      2017-09: Naz Osmanoglu
+      2017-10: Mrs Barbara Nice
+      2017-11: Jim Smallman
+      2017-12: Stella Graham
   northampton:
   - title: Short form
     day: Saturday
@@ -32,7 +32,7 @@ upcomingShows:
     bookingLink: https://www.eventbrite.co.uk/e/the-same-faces-improvised-comedy-northampton-tickets-31571746945?aff=erelpanelorg
   elsewhere:
   - title: Birmingham Improv Festival
-    date: 2017-10-29
+    date: 2017-10-29 00:00:00 Z
     venue: The Blue Orange Theatre, Birmingham
     bookingLink: http://birminghamimprovfestival.com/
 layout: home

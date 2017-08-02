@@ -3,7 +3,6 @@ title: Corporate Training
 layout: page
 ---
 
-
 ### What can Improv do for my Business?
 
 Improv can help your business! Improv encourages creative thinking, enhances communication skills, develops team work, and builds confidence. 
