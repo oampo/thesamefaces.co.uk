@@ -5,8 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--<link rel="shortcut icon" href="/favicon.ico">-->
         <title>{% if page.title %}{{ page.title | escape }} | {% endif %}The Same Faces &emdash; Improvised comedy based in Leicester and Northampton</title>
-        <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
         <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/0.9.1/hamburgers.min.css">
         <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
     </head>
     <body>
@@ -18,7 +19,13 @@
                     </svg>
                 </a>
             </h1>
-            <nav class="main-nav">
+            <button class="hamburger hamburger--spin" type="button"
+                    aria-label="Menu" aria-controls="main-nav">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <nav class="main-nav" id="main-nav">
                 <ul class="main-nav-list">
                     <li class="main-nav-list-item">
                         <a href="/shows" {% if page.url == '/shows.html' %}class="active"{% endif %}>Shows</a>

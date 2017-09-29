@@ -196,6 +196,10 @@ button, a.button {
     max-width: $max-width;
 }
 
+.page {
+    padding: 0 $spacing-m;
+}
+
 .blurb {
     padding: 0 $spacing-m;
 }
@@ -212,6 +216,16 @@ button, a.button {
     list-style: none;
     width: 150px;
     text-align: center;
+    margin: auto;
+}
+
+.player-img {
+    margin: auto;
+}
+
+.player-extra {
+    font-size: 0.8em;
+    font-style: italic;
 }
 
 @media (min-width: 768px) {
