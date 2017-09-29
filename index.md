@@ -37,7 +37,6 @@ upcomingShows:
     bookingLink: http://birminghamimprovfestival.com/
 layout: home
 customJs:
-- "/assets/jquery-3.2.1.slim.min.js"
 - "/assets/rrule.js"
 - "/assets/moment.min.js"
 - "/assets/upcoming-shows.js"

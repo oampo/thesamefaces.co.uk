@@ -6,8 +6,8 @@
         <!--<link rel="shortcut icon" href="/favicon.ico">-->
         <title>{% if page.title %}{{ page.title | escape }} | {% endif %}The Same Faces &emdash; Improvised comedy based in Leicester and Northampton</title>
         <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700" rel="stylesheet">
-        <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/0.9.1/hamburgers.min.css">
+        <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
         <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
     </head>
     <body>
@@ -25,62 +25,66 @@
                     <span class="hamburger-inner"></span>
                 </span>
             </button>
-            <nav class="main-nav" id="main-nav">
-                <ul class="main-nav-list">
-                    <li class="main-nav-list-item">
-                        <a href="/shows" {% if page.url == '/shows.html' %}class="active"{% endif %}>Shows</a>
-                    </li>
-                    <li class="main-nav-list-item">
-                        <a href="/players" {% if page.url == '/players.html' %}class="active"{% endif %}>Players</a>
-                    </li>
-                    <li class="main-nav-list-item">
-                        <a href="/workshops" {% if page.url == '/workshops.html' %}class="active"{% endif %}>Workshops</a>
-                    </li>
-                    <li class="main-nav-list-item">
-                        <a href="/corporate" {% if page.url == '/corporate.html' %}class="active"{% endif %}>Corporate</a>
-                    </li>
-                </ul>
-            </nav>
-            <nav class="social-nav">
-                <ul class="social-nav-list">
-                    <li class="social-nav-list-item">
-                        <a href="http://facebook.com/TheSameFaces">
-                            <svg class="icon icon-facebook-square">
-                                <use xlink:href="/assets/logos-icons.svg#icon-facebook-square"></use>
-                            </svg>
-                            <span class="social-nav-text">Facebook</span>
-                        </a>
-                    </li>
-                    <li class="social-nav-list-item">
-                        <a href="http://twitter.com/TheSameFaces">
-                            <svg class="icon icon-twitter-square">
-                                <use xlink:href="/assets/logos-icons.svg#icon-twitter-square"></use>
-                            </svg>
-                            <span class="social-nav-text">Twitter</span>
-                        </a>
-                    </li>
-                    <li class="social-nav-list-item">
-                        <a href="http://youtube.com/SameFaces1000">
-                            <svg class="icon icon-youtube-play">
-                                <use xlink:href="/assets/logos-icons.svg#icon-youtube-play"></use>
-                            </svg>
-                            <span class="social-nav-text">YouTube</span>
-                        </a>
-                    </li>
-                    <li class="social-nav-list-item">
-                        <a href="http://instagram.com/TheSameFaces">
-                            <svg class="icon icon-instagram">
-                                <use xlink:href="/assets/logos-icons.svg#icon-instagram"></use>
-                            </svg>
-                            <span class="social-nav-text">Instagram</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="navs navs-hidden">
+                <nav class="nav main-nav" id="main-nav">
+                    <ul class="main-nav-list">
+                        <li class="main-nav-list-item">
+                            <a href="/shows" {% if page.url == '/shows.html' %}class="active"{% endif %}>Shows</a>
+                        </li>
+                        <li class="main-nav-list-item">
+                            <a href="/players" {% if page.url == '/players.html' %}class="active"{% endif %}>Players</a>
+                        </li>
+                        <li class="main-nav-list-item">
+                            <a href="/workshops" {% if page.url == '/workshops.html' %}class="active"{% endif %}>Workshops</a>
+                        </li>
+                        <li class="main-nav-list-item">
+                            <a href="/corporate" {% if page.url == '/corporate.html' %}class="active"{% endif %}>Corporate</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="nav social-nav">
+                    <ul class="social-nav-list">
+                        <li class="social-nav-list-item">
+                            <a href="http://facebook.com/TheSameFaces">
+                                <svg class="icon icon-facebook-square">
+                                    <use xlink:href="/assets/logos-icons.svg#icon-facebook-square"></use>
+                                </svg>
+                                <span class="social-nav-text">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="social-nav-list-item">
+                            <a href="http://twitter.com/TheSameFaces">
+                                <svg class="icon icon-twitter-square">
+                                    <use xlink:href="/assets/logos-icons.svg#icon-twitter-square"></use>
+                                </svg>
+                                <span class="social-nav-text">Twitter</span>
+                            </a>
+                        </li>
+                        <li class="social-nav-list-item">
+                            <a href="http://youtube.com/SameFaces1000">
+                                <svg class="icon icon-youtube-play">
+                                    <use xlink:href="/assets/logos-icons.svg#icon-youtube-play"></use>
+                                </svg>
+                                <span class="social-nav-text">YouTube</span>
+                            </a>
+                        </li>
+                        <li class="social-nav-list-item">
+                            <a href="http://instagram.com/TheSameFaces">
+                                <svg class="icon icon-instagram">
+                                    <use xlink:href="/assets/logos-icons.svg#icon-instagram"></use>
+                                </svg>
+                                <span class="social-nav-text">Instagram</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main class="main" aria-label="Content">
             {{ content }}
         </main>
+        <script src="/assets/jquery-3.2.1.slim.min.js"></script>
+        <script src="/assets/main.js"></script>
         {% if page.customJs %}
         {% for file in page.customJs %}
         <script src="{{file}}"></script>

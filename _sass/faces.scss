@@ -8,6 +8,10 @@ $light-grey: #eae9e9;
 
 $logoWidth: 1800px;
 $logoHeight: 1850px;
+$logoScale: 1/20;
+
+$hamburgerWidth: 61px;
+$hamburgerHeight: 70px;
 
 $max-width: 1200px;
 
@@ -18,6 +22,8 @@ $spacing-m: 12px;
 $spacing-l: 24px;
 
 $font-stack: 'Fira Sans', sans-serif;
+
+$menuItems: 8;
 
 * {
     box-sizing: border-box;
@@ -75,8 +81,8 @@ nav ul, .upcoming-show-list {
 }
 
 .main-logo {
-    width: $logoWidth / 20;
-    height: $logoHeight / 20;
+    width: $logoWidth * $logoScale;
+    height: $logoHeight * $logoScale;
 }
 
 h1 {
@@ -85,7 +91,7 @@ h1 {
     display: flex;
 
     a {
-        height: $logoHeight / 20;
+        height: $logoHeight * $logoScale;
     }
 }
 
@@ -120,6 +126,17 @@ button, a.button {
     background: $black;
     color: $light-pink;
     padding: $spacing-m;
+}
+
+.navs {
+    transition: max-height 0.3s linear;
+    max-height: 42px * $menuItems;
+    overflow: hidden;
+}
+
+
+.navs-hidden {
+    max-height: 0;
 }
 
 .main-nav-list-item, .social-nav-list-item {
@@ -216,7 +233,6 @@ button, a.button {
     list-style: none;
     width: 150px;
     text-align: center;
-    margin: auto;
 }
 
 .player-img {
@@ -228,9 +244,28 @@ button, a.button {
     font-style: italic;
 }
 
+.hamburger {
+    position: absolute;
+    right: $spacing-m;
+    top: ($logoHeight * $logoScale - $hamburgerHeight) / 2 + 2 * $spacing-m;
+}
+
 @media (min-width: 768px) {
     header {
         display: flex;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navs {
+        display: flex;
+        flex: 1;
+    }
+
+    .navs-hidden {
+        max-height: none;
     }
 
     .main-nav {
@@ -239,7 +274,7 @@ button, a.button {
 
     .main-nav-list, .social-nav-list {
         display: flex;
-        line-height: $logoHeight / 20 + 2 * $spacing-m;
+        line-height: $logoHeight * $logoScale + 2 * $spacing-m;
 
         a {
             padding-top: 0;
